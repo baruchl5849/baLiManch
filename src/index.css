@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* כרטיס עיצוב */
+.card {
+    @apply bg-white border border-gray-300 rounded overflow-hidden text-center shadow-lg transition-transform duration-300;
+}
+
+.card:hover {
+    @apply transform -translate-y-1;
+}
+
+.container{
+    text-align: right;
+}
+
+.img {
+    @apply w-full h-64 object-cover;
+}
+
+.name-card {
+    @apply p-4;
+}
+
+.name {
+    @apply text-xl font-bold text-gray-800 m-0;
+}
+
+.details {
+    @apply flex justify-around py-2 text-gray-600;
+}
+
+.description {
+    @apply px-4 py-2 text-gray-700;
+}
+
+.link {
+    @apply text-blue-500 hover:underline;
+}
+
+/* כוכבים */
+input[type="radio"] {
+    display: none;
+}
